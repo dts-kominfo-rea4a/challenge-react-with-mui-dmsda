@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import ContactForm from './components/ContactForm';
 // Uncomment untuk memuat daftar kontak
 import contactsJSON from './data/contacts.json';
+
 const App = ({}) => {
   // Masukkan Header dan lakukan map untuk Contact ke dalam div App
   // untuk membuat daftar kontak bisa menggunakan MUI list

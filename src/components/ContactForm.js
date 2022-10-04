@@ -13,8 +13,8 @@ const ContactForm = (data) => {
 
     const [ contact, newContact ] = useState('');
 
-    const onSubmitContact = (contact) => {
-        newContact(...contact, data);
+    const onSubmitContact = (data) => {
+        newContact(...data, contact);
     }
 
     const onChangeContact = (data) => {

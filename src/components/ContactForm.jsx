@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Typography, TextField } from '@mui/material';
 
-
 // Form dapat dibuat dengan TextField
 // https://mui.com/material-ui/react-text-field/#basic-textfield
 // dan Card
@@ -14,13 +13,14 @@ const ContactForm = (data) => {
 
     const [ contact, newContact ] = useState('');
 
-    const onSubmitContact = (contacts) => {
-        newContact(...contacts, data);
+    const onSubmitContact = (contact) => {
+        newContact(...contact, data);
     }
 
     const onChangeContact = (data) => {
+        newContact.preventDefault();
         newContact(data.target.value);
-        contact("");
+        newContact("");
     }
 
     return (

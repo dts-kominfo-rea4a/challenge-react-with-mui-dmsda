@@ -18,13 +18,13 @@ const Contact = ({ data }) => {
      <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt={data.phone} src={data.photo} />
+          <Avatar alt={propsContact.data.phone} src={propsContact.data.photo} />
         </ListItemAvatar>
         <ListItemText
-          primary={data.name}
+          primary={propsContact.data.name}
         />
         <ListItemText
-          primary={data.email}
+          primary={propsContact.data.email}
         />
       </ListItem>
       <Divider variant="inset" component="li" />
